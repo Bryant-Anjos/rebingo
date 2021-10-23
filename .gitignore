@@ -32,3 +32,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# rescript
+*.bs.js
+.bsb.lock
+.merlin
+lib/bs

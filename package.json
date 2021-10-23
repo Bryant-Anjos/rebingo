@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "re:build": "rescript",
+    "re:start": "rescript build -w"
   },
   "dependencies": {
     "next": "11.1.2",
@@ -14,7 +16,13 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@rescript/react": "^0.10.3",
+    "autoprefixer": "^10.3.7",
     "eslint": "8.1.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "postcss": "^8.3.11",
+    "rescript": "^9.1.4",
+    "sass": "^1.43.3",
+    "tailwindcss": "^2.2.17"
   }
 }
