@@ -1,0 +1,11 @@
+$colors: red, blue, green;
+
+@each $color in $colors {
+  .#{$color} {
+    @apply bg-#{$color}-500;
+
+    div > p {
+      @apply text-#{$color}-500;
+    }
+  }
+}
