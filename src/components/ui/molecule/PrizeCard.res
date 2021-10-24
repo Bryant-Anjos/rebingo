@@ -1,5 +1,5 @@
 type styles = {card: string}
-@module("./Card.module.scss") external styles: {..} = "default"
+@module("./Colors.module.scss") external styles: {..} = "default"
 
 @react.component
 let make = (~title, ~prize, ~color: [#red | #blue | #green]) => {

@@ -14,3 +14,20 @@ let sortNumbers = numbers => {
   let _ = newNumbers->Js.Array2.push(number)
   newNumbers
 }
+
+let isSorted = (~value, ~sorteds) => {
+  let result = switch sorteds {
+  | None => None
+  | Some([]) => None
+  | Some(items) =>
+    if items[items->Belt.Array.length - 1] === value {
+      Some(#current)
+    } else if items->Belt.Array.some(item => item == value) {
+      Some(#sorted)
+    } else {
+      None
+    }
+  }
+
+  result->Belt.Option.getWithDefault(#none)
+}
